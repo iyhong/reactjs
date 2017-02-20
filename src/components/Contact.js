@@ -42,6 +42,8 @@ export default class Contact extends React.Component {
             data.sort(-1);
             data = data.filter(
               (contact) => {
+                //String의 indexOf 메서드를 이용해 이름에 Serach의 내용이 포함되어있을때
+                //true를 반환
                 return contact.name.toLowerCase().indexOf(this.state.keyword) > -1;
               }
             )

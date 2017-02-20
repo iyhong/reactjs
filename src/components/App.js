@@ -1,6 +1,6 @@
 import React from 'react';
 //=>var React = require('react');
-
+import Contact from './Contact';
 
 
 class App extends React.Component {
@@ -15,10 +15,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <button onClick={() => { this.setState({name: '이거되네?'}) }}>CLICK ME</button>
-        <h1>Hello React Skeleton!</h1>
-        <h2>{this.state.value}11ㅁㅋㅋ오호{this.state.name}41122333</h2>
-        <button onClick={() => { this.setState({value: this.state.value + 1}) }}>CLICK ME</button>
+        <Contact/>
       </div>
     );
 }

@@ -21,5 +21,6 @@ class App extends React.Component {
 }
 }
 
+//이클래스를 다른클래스에서 사용가능하도록 export해줌
 export default App;
 //=>module.export = App;

@@ -3,6 +3,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: './src/index.js',
 
+    //bundle.js 파일을 만들어줌
     output: {
         path: __dirname + '/public/',
         filename: 'bundle.js'
@@ -30,6 +31,7 @@ module.exports = {
             ]
         },
 
+        //hot loader 플러그인
         plugins: [
           new webpack.HotModuleReplacementPlugin()
         ]
